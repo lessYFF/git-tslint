@@ -22,6 +22,7 @@
     "devDependencies": {
         "@types/mocha": "^5.2.7",
         "chai": "^4.2.0",
+        "mocha": "^6.2.0",
         "ts-mocha": "^6.0.0"
     },
     "dependencies": {
@@ -43,7 +44,19 @@
         "typescript": "^3.6.3"
     },
     "lint-staged": {
-        "*.{js,jsx,json,ts,css,md,vue,react}": [
+        "*.{ts,tsx}": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.{js,jsx}": [
+            "eslint --fix",
+            "git add"
+        ],
+        "*.{html,vue}": [
+            "prettier --write",
+            "git add"
+        ],
+        "*.{css,scss,less,stylus}": [
             "prettier --write",
             "git add"
         ]
