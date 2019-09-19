@@ -1,5 +1,5 @@
 // 格式化配置
-{
+module.exports = {
     // 行尾逗号,默认none,可选 none|es5|all
     trailingComma: 'es5',
     // 单行长度,默认80

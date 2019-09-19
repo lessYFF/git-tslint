@@ -1,4 +1,4 @@
-{
+module.exports = {
     env: {
         browser: true,
         commonjs: true,
@@ -16,7 +16,6 @@
     parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
-        project: './tsconfig.json',
     },
     rules: {
         indent: ['error', 'tab'],
@@ -24,5 +23,5 @@
         quotes: ['error', 'single'],
         semi: ['error', 'always'],
         '@typescript-eslint/rule-name': 'error',
-    }
+    },
 }

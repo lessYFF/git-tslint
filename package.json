@@ -44,19 +44,7 @@
         "typescript": "^3.6.3"
     },
     "lint-staged": {
-        "*.{ts,tsx}": [
-            "eslint --fix",
-            "git add"
-        ],
-        "*.{js,jsx}": [
-            "eslint --fix",
-            "git add"
-        ],
-        "*.{html,vue}": [
-            "prettier --write",
-            "git add"
-        ],
-        "*.{css,scss,less,stylus}": [
+        "*.{js,jsx,json,ts,css,sass,scss,less,md,vue}": [
             "prettier --write",
             "git add"
         ]
