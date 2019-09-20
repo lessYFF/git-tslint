@@ -10,7 +10,7 @@
         "test": "ts-mocha test/index.ts"
     },
     "bin": {
-        "git-tslint-init": "./src/index"
+        "git-tslint-init": "./src/index.ts"
     },
     "keywords": [
         "pre-commit",
