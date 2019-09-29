@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-'use strict'
-const fs = require('fs')
-const path = require('path')
-const FS = require('./fs/index')
+
+import * as fs from 'fs'
+import * as path from 'path'
+import FS from './fs/index'
 
 // 拷贝配置文件到项目根目录
 FS.batchCopyFile(['CHANGELOG.md', '.eslintrc.js', '.prettierrc.js', '.commitlintrc.js'], '../../')
